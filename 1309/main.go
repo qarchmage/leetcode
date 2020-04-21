@@ -10,7 +10,7 @@ func main() {
 	fmt.Println(freqAlphabets(s))
 }
 
-func freqAlphabets(s string) string {
+func freqAlphabets2(s string) string {
 	r := ""
 	slice := []rune(s)
 	fmt.Println(slice)
@@ -24,16 +24,12 @@ func freqAlphabets(s string) string {
 	}
 	return r
 }
-
-func freqAlphabets2(s string) string {
+func freqAlphabets(s string) string {
 	var (
 		r, tmp string
 		tmp2   int
 	)
-	slice := make([]rune, 0, len(s))
-	for _, v := range s {
-		slice = append(slice, v)
-	}
+	slice := []rune(s)
 	for i := len(slice) - 1; i >= 0; i-- {
 		if slice[i] == '#' {
 			tmp = string(slice[i-2]) + string(slice[i-1])
