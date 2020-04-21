@@ -1,1 +1,1 @@
-# These are my answers to problems on leetcode
+# solutions to leetcode.com
