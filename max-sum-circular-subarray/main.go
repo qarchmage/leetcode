@@ -4,16 +4,16 @@ import (
 	"fmt"
 	"math"
 	"math/rand"
-	"time"
 )
 
 func main() {
-	start := time.Now()
-	for i := 0; i < 200; i++ {
-		a := ge()
-		fmt.Println(maxSubarraySumCircular(a))
-	}
-	fmt.Println(time.Since(start))
+	//start := time.Now()
+	//for i := 0; i < 200; i++ {
+	//a := ge()
+	//fmt.Println(maxSubarraySumCircular(a))
+	//}
+	//fmt.Println(time.Since(start))
+	fmt.Println(maxSubarraySumCircular([]int{5, -3, 5}))
 }
 
 func maxSubarraySumCircular(A []int) int {
@@ -34,6 +34,7 @@ func maxSubarraySumCircular(A []int) int {
 	return int(math.Max(float64(max1), float64(max2)))
 }
 
+// return max sum of subarray
 func kadane(a []int) int {
 	cur := a[0]
 	max := a[0]
@@ -46,6 +47,7 @@ func kadane(a []int) int {
 
 }
 
+// creates an array with size from 0 to 30000
 func ge() []int {
 	a := make([]int, rand.Intn(30000))
 	min := -30000
