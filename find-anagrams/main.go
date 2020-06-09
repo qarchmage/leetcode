@@ -10,7 +10,7 @@ func main() {
 		fmt.Println(findAnagrams(cases[i], cases[i+1]))
 	}
 }
-func findAnagrams2(s string, p string) []int {
+func findAnagrams2(s, p string) []int {
 	if len(s) < len(p) {
 		return nil
 	}
