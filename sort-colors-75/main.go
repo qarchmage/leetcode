@@ -10,9 +10,6 @@ func main() {
 	a := generateSlice(5)
 	sortColors(a)
 	fmt.Println(a)
-	fmt.Println(rand.Int() % 6)
-	fmt.Println(rand.Int() % 6)
-	fmt.Println(rand.Int() % 6)
 }
 
 func sortColors(nums []int) {
