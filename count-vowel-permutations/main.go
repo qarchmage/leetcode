@@ -5,7 +5,6 @@ import (
 )
 
 func main() {
-	// 18208803
 	fmt.Println(countVowelPermutation(144))
 }
 
