@@ -13,18 +13,13 @@ func main() {
 
 func findDuplicate(nums []int) int {
 	var x uint64
-
-	// perform max word search here ?
-
 	max := 0
-
 	for i := range nums {
 		if nums[i] > max {
 			max = nums[i]
 		}
 	}
 	max = (max / 64) + 1
-
 	H := make([]uint64, max)
 	for i := range nums {
 		word, bit := nums[i]/64, nums[i]%64
