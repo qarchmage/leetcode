@@ -1,5 +1,5 @@
 # solutions to leetcode.com
 
-# TODO
+### TODO
 
-[] SORT & rename
+- [ ] SORT & rename
